@@ -43,3 +43,29 @@ AWSLabsUser-sBi3fUneoasJVdkWxs1FGJ:~/environment/templates (main) $ aws cloudfor
     "StackResourceDrifts": []
 }
 ```
+
+
+```
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:100593996707:stack/Lab1/5429cd30-771c-11ef-afa9-066a6fa0217b",
+            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-02a3a7f6ad2f94608",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0c80f2c9f367876c4\"}",
+            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0c80f2c9f367876c4\"}",
+            "PropertyDifferences": [
+                {
+                    "PropertyPath": "/SecurityGroupIngress/0/CidrIp",
+                    "ExpectedValue": "1.1.1.1/32",
+                    "ActualValue": "0.0.0.0/0",
+                    "DifferenceType": "NOT_EQUAL"
+                }
+            ],
+            "StackResourceDriftStatus": "MODIFIED",
+            "Timestamp": "2024-09-20T06:58:17.757000+00:00"
+        }
+    ]
+
+```
