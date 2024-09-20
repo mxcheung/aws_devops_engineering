@@ -103,3 +103,16 @@ Successfully created/updated stack - sam-app in ap-south-1
 
 AWSLabsUser-dA5voJUXNvJzGSLfctPhxy:~/environment/sam-app $
 ```
+
+
+```
+AWSLabsUser-dA5voJUXNvJzGSLfctPhxy:~/environment/sam-app $ aws cloudformation describe-stacks --stack-name sam-app --query 'Stacks[].Outputs[?OutputKey==`HelloWorldApi`]' --output table
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                       DescribeStacks                                                                       |
++-------------------------------------------------------------------+----------------+-----------------------------------------------------------------------+
+|                            Description                            |   OutputKey    |                              OutputValue                              |
++-------------------------------------------------------------------+----------------+-----------------------------------------------------------------------+
+|  API Gateway endpoint URL for Prod stage for Hello World function |  HelloWorldApi |  https://73b8hb83t4.execute-api.ap-south-1.amazonaws.com/Prod/hello/  |
++-------------------------------------------------------------------+----------------+-----------------------------------------------------------------------+
+AWSLabsUser-dA5voJUXNvJzGSLfctPhxy:~/environment/sam-app $
+```
