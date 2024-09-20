@@ -60,3 +60,29 @@ aws deploy create-deployment --application-name HeartBeatProduction-App --deploy
 }
 
 ```
+
+
+
+# Task 4.4: Review the deployment targets
+
+```
+
+PS C:\Windows\system32> Service "AWSHeartbeat*"
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AWSHeartbeatSer... AWS Heartbeat Demo Service
+
+
+PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
+[INFO]09/20 10:18:37 - Heartbeat - Deploy has Worked on Tuesday! Iteration 131
+[INFO]09/20 10:18:38 - Heartbeat - Deploy has Worked on Tuesday! Iteration 132
+[INFO]09/20 10:18:39 - Heartbeat - Deploy has Worked on Tuesday! Iteration 133
+[INFO]09/20 10:18:40 - Heartbeat - Deploy has Worked on Tuesday! Iteration 134
+[INFO]09/20 10:18:41 - Heartbeat - Deploy has Worked on Tuesday! Iteration 135
+[INFO]09/20 10:18:42 - Heartbeat - Deploy has Worked on Tuesday! Iteration 136
+[INFO]09/20 10:18:43 - Heartbeat - Deploy has Worked on Tuesday! Iteration 137
+[INFO]09/20 10:18:44 - Heartbeat - Deploy has Worked on Tuesday! Iteration 138
+[INFO]09/20 10:18:45 - Heartbeat - Deploy has Worked on Tuesday! Iteration 139
+[INFO]09/20 10:18:46 - Heartbeat - Deploy has Worked on Tuesday! Iteration 140
+```
