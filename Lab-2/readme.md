@@ -22,3 +22,27 @@ Status   Name               DisplayName
 ------   ----               -----------
 Running  codedeployagent    CodeDeploy Host Agent Service
 ```
+
+
+# Developer Tools > CodeDeploy > Applications >  HeartBeatProduction-App > HeartBeatProduction-App-Group
+
+```
+Deployment group details
+Deployment group name
+HeartBeatProduction-App-Group
+Application name
+HeartBeatProduction-App
+Compute platform
+EC2/On-premises
+Deployment type
+In-place
+Service role ARN
+arn:aws:iam::106956192965:role/CodeDeployServiceRole
+Deployment configuration
+CodeDeployDefault.AllAtOnce
+Rollback enabled
+False
+Agent update scheduler
+Learn to schedule update in AWS Systems Manager 
+```
+
