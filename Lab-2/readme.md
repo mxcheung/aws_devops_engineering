@@ -87,6 +87,12 @@ PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
 [INFO]09/20 10:18:46 - Heartbeat - Deploy has Worked on Tuesday! Iteration 140
 ```
 
+# Task 5: Redeploying applications using CodeDeploy
+
+```
+cd ~/environment/Updated-HeartBeat-App
+aws deploy create-deployment --application-name HeartBeatProduction-App --deployment-group-name HeartBeatProduction-App-Group --deployment-config-name CodeDeployDefault.AllAtOnce --description "Updated Deployment" --s3-location bucket=$bucketName,key=HeartBeat-App.zip,bundleType=zip
+```
 
 # Task 5.2: Review the deployment targets
 
