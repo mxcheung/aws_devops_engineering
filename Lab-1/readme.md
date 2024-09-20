@@ -82,3 +82,10 @@ AWSLabsUser-sBi3fUneoasJVdkWxs1FGJ:~/environment/templates (main) $ aws cloudfor
     "StackId": "arn:aws:cloudformation:ap-northeast-1:100593996707:stack/Lab1/5429cd30-771c-11ef-afa9-066a6fa0217b"
 }
 ```
+
+
+
+```
+http://52.193.104.162/
+Congratulations, you have successfully deployed a simple infrastructure using AWS CloudFormation.
+```
