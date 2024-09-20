@@ -139,3 +139,10 @@ arn:aws:iam::435019841659:role/SAM_Role
 Configure automatic rollback on stage failure
 Disabled
 ```
+
+
+```
+https://73b8hb83t4.execute-api.ap-south-1.amazonaws.com/Prod/hello/
+Lab4 application has been successfully deployed.
+Lab4 application has been updated.
+```
