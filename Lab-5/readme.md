@@ -40,3 +40,28 @@ AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main
                 "essential": true,
                 "environment": [],
 ```
+
+
+```
+AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ aws ecs create-service --service-name MyApp-Web-service --cli-input-json file://create-service.json
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:eu-central-1:110016545771:service/my-webapp-cluster/MyApp-Web-service",
+        "serviceName": "MyApp-Web-service",
+        "clusterArn": "arn:aws:ecs:eu-central-1:110016545771:cluster/my-webapp-cluster",
+        "loadBalancers": [
+            {
+                "targetGroupArn": "arn:aws:elasticloadbalancing:eu-central-1:110016545771:targetgroup/MyApp-ALB-target1/daebca60f31c7593",
+                "containerName": "my-webapp",
+                "containerPort": 80
+            }
+        ],
+        "serviceRegistries": [],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+
+```
