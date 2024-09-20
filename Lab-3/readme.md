@@ -69,3 +69,13 @@ PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
 [INFO]09/20 10:58:21 - Heartbeat - Deploy has Worked on Tuesday! Iteration 80
 [INFO]0
 ```
+
+
+
+# Task 5: Change the HeartBeatProduction-App source code
+Task 5.1 Retrieve the updated application and upload it to the Amazon S3 application source bucket
+
+```
+AWSLabsUser-ftpihyArqEEUECgH2heCWu:~/environment/CodeDeployHeartbeatDemo $ aws s3 cp s3://$myRegion-tcprod/courses/ILT-TF-200-DEVOPS/v3.6.8.prod-659f76dc/lab-3-CodePipeline/bundles/updated-HeartBeat-App.zip s3://$myAppSrcBucket/HeartBeat-App.zipcopy: s3://ap-southeast-1-tcprod/courses/ILT-TF-200-DEVOPS/v3.6.8.prod-659f76dc/lab-3-CodePipeline/bundles/updated-HeartBeat-App.zip to s3://labstack-23d03e98-8142-4c9-applicationsourcebucket-yesbxzxk6cjo/HeartBeat-App.zip
+AWSLabsUser-ftpihyArqEEUECgH2heCWu:~/environment/CodeDeployHeartbeatDemo $
+```
