@@ -65,3 +65,11 @@ AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main
         "platformVersion": "1.4.0",
 
 ```
+
+# Task 4: Review the current running state of your web application
+
+```
+MyApp-ALB-1831354435.eu-central-1.elb.amazonaws.com
+Congratulations!!!
+Your application is now running on a container in Amazon ECS using a base image from ECR
+```
