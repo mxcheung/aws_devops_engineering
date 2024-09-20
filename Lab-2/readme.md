@@ -46,3 +46,11 @@ Agent update scheduler
 Learn to schedule update in AWS Systems Manager 
 ```
 
+# Task 4.1: Push the application to archive file
+
+```
+AWSLabsUser-hW2iayvZSrYrvso9XFzMi:~/environment $ bucketName=heartbeat-codedeploy-artifacts-mc-2035
+AWSLabsUser-hW2iayvZSrYrvso9XFzMi:~/environment $ aws s3 mb s3://$bucketName
+make_bucket: heartbeat-codedeploy-artifacts-mc-2035
+AWSLabsUser-hW2iayvZSrYrvso9XFzMi:~/environment $ 
+```
