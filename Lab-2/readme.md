@@ -86,3 +86,23 @@ PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
 [INFO]09/20 10:18:45 - Heartbeat - Deploy has Worked on Tuesday! Iteration 139
 [INFO]09/20 10:18:46 - Heartbeat - Deploy has Worked on Tuesday! Iteration 140
 ```
+
+
+# Task 5.2: Review the deployment targets
+
+```
+INFO]09/20 10:20:21 - HeartbeatImpl is shutting down...
+[INFO]09/20 10:20:21 - Heartbeat service is now stopped
+PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
+[INFO]09/20 10:20:21 - Commencing shutdown procedure...
+[INFO]09/20 10:20:21 - HeartbeatImpl is shutting down...
+[INFO]09/20 10:20:21 - Heartbeat service is now stopped
+[INFO]09/20 10:20:32 - Initialising Heartbeat Service...
+[INFO]09/20 10:20:32 - Heartbeat Service - Updated!!! Iteration 1
+[INFO]09/20 10:20:32 - Heartbeat Service is now running...
+[INFO]09/20 10:20:33 - Heartbeat Service - Updated!!! Iteration 2
+[INFO]09/20 10:20:34 - Heartbeat Service - Updated!!! Iteration 3
+[INFO]09/20 10:20:35 - Heartbeat Service - Updated!!! Iteration 4
+[INFO]09/20 10:20:36 - Heartbeat Service - Updated!!! Iteration 5
+PS C:\Windows\system32>
+```
