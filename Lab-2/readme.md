@@ -61,6 +61,13 @@ aws deploy create-deployment --application-name HeartBeatProduction-App --deploy
 
 ```
 
+# Task 4.2: Deploy the application to CodeDeploy targets
+
+```
+cd ~/environment/CodeDeployHeartbeatDemo
+aws deploy push --application-name HeartBeatProduction-App --source HeartBeat-App --s3-location s3://$bucketName/HeartBeat-App.zip
+aws deploy create-deployment --application-name HeartBeatProduction-App --deployment-group-name HeartBeatProduction-App-Group --deployment-config-name CodeDeployDefault.AllAtOnce --description "Initial Deployment" --s3-location bucket=$bucketName,key=HeartBeat-App.zip,bundleType=zip
+```
 
 
 # Task 4.4: Review the deployment targets
