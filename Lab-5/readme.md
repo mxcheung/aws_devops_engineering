@@ -21,4 +21,22 @@ Task 3.1: Create Amazon ECS task definition
 ```
 AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ cd ~/environment/local_repo/my-webapp-repo
 AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ aws ecs register-task-definition --cli-input-json file://taskdef.json
+
+{
+    "taskDefinition": {
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:110016545771:task-definition/my-webapp:1",
+        "containerDefinitions": [
+            {
+                "name": "my-webapp",
+                "image": "110016545771.dkr.ecr.eu-central-1.amazonaws.com/my-webapp-repo",
+                "cpu": 0,
+                "portMappings": [
+                    {
+                        "containerPort": 80,
+                        "hostPort": 80,
+                        "protocol": "tcp"
+                    }
+                ],
+                "essential": true,
+                "environment": [],
 ```
