@@ -3,9 +3,7 @@
 ```
 cd ~/environment/templates
 aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
-```
 
-```
 {
     "StackId": "arn:aws:cloudformation:ap-northeast-1:100593996707:stack/Lab1/5429cd30-771c-11ef-afa9-066a6fa0217b"
 }
@@ -14,10 +12,7 @@ aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=Inst
 
 ```
 aws cloudformation describe-stacks --stack-name Lab1
-```
 
-
-```
 {
     "Stacks": [
         {
@@ -38,4 +33,13 @@ aws cloudformation describe-stacks --stack-name Lab1
                     "ParameterValue": "10.199.10.0/24"
                 },
                 {
+```
+
+
+
+```
+AWSLabsUser-sBi3fUneoasJVdkWxs1FGJ:~/environment/templates (main) $ aws cloudformation describe-stack-resource-drifts --stack-name Lab1 --stack-resource-drift-status-filters MODIFIED DELETED
+{
+    "StackResourceDrifts": []
+}
 ```
