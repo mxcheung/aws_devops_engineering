@@ -50,3 +50,22 @@ A new Amazon S3 bucket will be created as the default artifact store for your pi
 Service role name
 AWSCodePipelineServiceRole-ap-southeast-1-CodePipeline
 ```
+
+
+# Task 4 Verifying the CodePipeline deployment
+
+```
+PS C:\Windows\system32> Service "AWSHeartbeat*"
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AWSHeartbeatSer... AWS Heartbeat Demo Service
+
+
+PS C:\Windows\system32> Content C:\Logs\HeartBeatService.log -last 10
+[INFO]09/20 10:58:18 - Heartbeat - Deploy has Worked on Tuesday! Iteration 77
+[INFO]09/20 10:58:19 - Heartbeat - Deploy has Worked on Tuesday! Iteration 78
+[INFO]09/20 10:58:20 - Heartbeat - Deploy has Worked on Tuesday! Iteration 79
+[INFO]09/20 10:58:21 - Heartbeat - Deploy has Worked on Tuesday! Iteration 80
+[INFO]0
+```
