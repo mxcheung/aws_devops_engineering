@@ -73,3 +73,14 @@ MyApp-ALB-1831354435.eu-central-1.elb.amazonaws.com
 Congratulations!!!
 Your application is now running on a container in Amazon ECS using a base image from ECR
 ```
+
+
+# Task 6: Testing the CodePipeline automation
+
+Task 6.1: Change the application code to modify the background-color
+
+```
+git add .
+git commit -m "Updated Dockerfile file"
+git push
+```
