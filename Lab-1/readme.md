@@ -83,7 +83,14 @@ AWSLabsUser-sBi3fUneoasJVdkWxs1FGJ:~/environment/templates (main) $ aws cloudfor
 }
 ```
 
+# Task 5.5: Verify the AppURL is working
+In this task, you access the AppURL link to ensure the security group change made is successfully implemented.
 
+Return to the Your Environments browser tab, return to the Lab1 stack console view.
+
+On the Outputs tab, launch the URL shown in a new browser tab.
+
+When loaded, a webpage is displayed with the following message: “Congratulations, you have successfully deployed a simple infrastructure using AWS CloudFormation”.
 
 ```
 http://52.193.104.162/
