@@ -12,3 +12,13 @@ git push
 AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ git push
 
 ```
+
+# Task 3: Preparing the ECS cluster to support application deployment
+In this task, you configure your ECS cluster to support the deployment of a demonstration application called my-webapp. You define an ECS task to refer to the application container image hosted in the ECR repo with necessary configuration details. Then, you define an ECS service to run containers based on the task definition behind a load balancer to support the traffic distribution once blue/green deployment goes live.
+
+Task 3.1: Create Amazon ECS task definition
+
+```
+AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ cd ~/environment/local_repo/my-webapp-repo
+AWSLabsUser-4QUmNYd6X5cY3aKBDYMnY9:~/environment/local_repo/my-webapp-repo (main) $ aws ecs register-task-definition --cli-input-json file://taskdef.json
+```
