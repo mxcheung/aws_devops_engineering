@@ -82,8 +82,8 @@ Resources:
           Value: !Ref 'AWS::StackId'
   ## Route resource
   # TASK 2.2 - BEGIN: Configure the resource definition for Route
-  Route: AWS::EC2::Route
-    Type:
+  Route: 
+    Type: 'AWS::EC2::Route'
     DependsOn:
       - VPC
       - AttachGateway
