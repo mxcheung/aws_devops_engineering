@@ -116,3 +116,26 @@ AWSLabsUser-dA5voJUXNvJzGSLfctPhxy:~/environment/sam-app $ aws cloudformation de
 +-------------------------------------------------------------------+----------------+-----------------------------------------------------------------------+
 AWSLabsUser-dA5voJUXNvJzGSLfctPhxy:~/environment/sam-app $
 ```
+
+
+# Task 2.2: Create the continuous delivery pipeline for your lab4 application
+
+```
+Deploy action provider
+Deploy action provider
+AWS CloudFormation
+ActionMode
+CHANGE_SET_REPLACE
+StackName
+sam-app
+ChangeSetName
+lab4-sam-changeset
+TemplatePath
+BuildArtifact::outputtemplate.yaml
+Capabilities
+CAPABILITY_IAM
+RoleArn
+arn:aws:iam::435019841659:role/SAM_Role
+Configure automatic rollback on stage failure
+Disabled
+```
