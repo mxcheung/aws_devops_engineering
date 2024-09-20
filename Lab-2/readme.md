@@ -55,5 +55,8 @@ make_bucket: heartbeat-codedeploy-artifacts-mc-2035
 AWSLabsUser-hW2iayvZSrYrvso9XFzMi:~/environment $
 AWSLabsUser-hW2iayvZSrYrvso9XFzMi:~/environment $ cd ~/environment/CodeDeployHeartbeatDemo
 aws deploy create-deployment --application-name HeartBeatProduction-App --deployment-group-name HeartBeatProduction-App-Group --deployment-config-name CodeDeployDefault.AllAtOnce --description "Initial Deployment" --s3-location bucket=$bucketName,key=HeartBeat-App.zip,bundleType=zip
+{                                                 cd ~/env
+    "deploymentId": "d-PWE8KPZ67"
+}
 
 ```
